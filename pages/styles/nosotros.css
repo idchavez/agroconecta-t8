@@ -4,13 +4,11 @@
 
 body {
 
-font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
-background: linear-gradient(
-to bottom,
-#ffffff,
-#f0fdf4
-);
+    background: linear-gradient(to bottom,
+            #ffffff,
+            #f0fdf4);
 
 }
 
@@ -21,9 +19,9 @@ to bottom,
 
 .img-nosotros {
 
-border-radius: 12px;
+    border-radius: 12px;
 
-box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -34,13 +32,13 @@ box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 
 .titulo-resaltado {
 
-color: #16A34A;
+    color: #16A34A;
 
-font-weight: 900;
+    font-weight: 900;
 
-font-size: 32px;
+    font-size: 32px;
 
-letter-spacing: 1px;
+    letter-spacing: 1px;
 
 }
 
@@ -51,41 +49,43 @@ letter-spacing: 1px;
 
 .seccion-impacto {
 
-margin-top: 60px;
+    margin-top: 60px;
 
 }
 
 .impacto-box {
 
-background: linear-gradient(
-to bottom,
-#ffffff,
-#DCFCE7
-);
+    background: linear-gradient(to bottom,
+            #ffffff,
+            #DCFCE7);
 
-padding: 20px;
+    padding: 20px;
 
-border-radius: 12px;
+    border-radius: 12px;
 
-text-align: center;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    
+    border: 1px solid #e5e7eb;
 
-transition: 0.3s;
+    text-align: center;
+
+    transition: 0.3s;
 
 }
 
 .impacto-box:hover {
 
-transform: scale(1.05);
+    transform: scale(1.05);
 
 }
 
 .impacto-box h4 {
 
-color: #16A34A;
+    color: #16A34A;
 
-font-weight: bold;
+    font-weight: bold;
 
-font-size: 28px;
+    font-size: 28px;
 
 }
 
@@ -96,25 +96,23 @@ font-size: 28px;
 
 .card-info {
 
-background: linear-gradient(
-to bottom,
-#ffffff,
-#DCFCE7
-);
+    background: linear-gradient(to bottom,
+            #ffffff,
+            #DCFCE7);
 
-border-radius: 12px;
+    border-radius: 12px;
 
-transition: 0.3s;
+    transition: 0.3s;
 
-padding: 25px;
+    padding: 25px;
 
 }
 
 .card-info:hover {
 
-transform: translateY(-10px);
+    transform: translateY(-10px);
 
-box-shadow: 0px 8px 16px rgba(0,0,0,0.12);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
 
 }
 
@@ -123,15 +121,15 @@ box-shadow: 0px 8px 16px rgba(0,0,0,0.12);
 
 .texto-oculto {
 
-opacity: 0;
+    opacity: 0;
 
-max-height: 0;
+    max-height: 0;
 
-overflow: hidden;
+    overflow: hidden;
 
-transition: 0.4s;
+    transition: 0.4s;
 
-font-weight: 600;
+    font-weight: 600;
 
 }
 
@@ -140,11 +138,11 @@ font-weight: 600;
 
 .card-info:hover .texto-oculto {
 
-opacity: 1;
+    opacity: 1;
 
-max-height: 200px;
+    max-height: 200px;
 
-margin-top: 15px;
+    margin-top: 15px;
 
 }
 
@@ -155,28 +153,27 @@ margin-top: 15px;
 
 .info-extra {
 
-background: linear-gradient(
-to bottom,
-#ffffff,
-#DCFCE7
-);
+    background: linear-gradient(to bottom,
+            #ffffff,
+            #DCFCE7);
 
-padding: 30px;
+    padding: 30px;
 
-border-radius: 12px;
+    border-radius: 12px;
 
-margin-bottom: 40px;
+    margin-bottom: 40px;
 
 }
+
 .texto-equipo {
 
-font-size: 18px;
+    font-size: 18px;
 
-color: #333;
+    color: #333;
 
-max-width: 750px;
+    max-width: 750px;
 
-margin: auto;
+    margin: auto;
 
 }
 
@@ -186,27 +183,25 @@ margin: auto;
 
 .card-equipo {
 
-background: linear-gradient(
-135deg,
-#ffffff,
-#d1fae5
-);
+    background: linear-gradient(135deg,
+            #ffffff,
+            #d1fae5);
 
-border-radius: 15px;
+    border-radius: 15px;
 
-transition: 0.3s;
+    transition: 0.3s;
 
-box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
 
-min-height: 160px;
+    min-height: 160px;
 
-/* centra contenido vertical */
+    /* centra contenido vertical */
 
-display: flex;
+    display: flex;
 
-flex-direction: column;
+    flex-direction: column;
 
-justify-content: center;
+    justify-content: center;
 
 }
 
@@ -214,7 +209,7 @@ justify-content: center;
 
 .card-equipo:hover {
 
-transform: translateY(-10px);
+    transform: translateY(-10px);
 
 }
 
@@ -224,13 +219,13 @@ transform: translateY(-10px);
 
 .nombre-equipo {
 
-color: #16A34A;
+    color: #16A34A;
 
-font-weight: 900;
+    font-weight: 900;
 
-font-size: 18px;
+    font-size: 18px;
 
-margin-bottom: 8px;
+    margin-bottom: 8px;
 
 }
 
@@ -240,8 +235,8 @@ margin-bottom: 8px;
 
 .rol-equipo {
 
-font-size: 14px;
+    font-size: 14px;
 
-color: #555;
+    color: #555;
 
 }
