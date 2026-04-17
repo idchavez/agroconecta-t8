@@ -1,6 +1,18 @@
+/* ============================= */
+/* BASE */
+/* ============================= */
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom, #ffffff, #f0fdf4);
+
+    font-family: var(--font-family-base);
+
+    background:
+        linear-gradient(
+            to bottom,
+            var(--color-white),
+            var(--color-primary-100)
+        );
+
 }
 
 /* ============================= */
@@ -8,11 +20,17 @@ body {
 /* ============================= */
 
 .titulo-principal {
-    color: #16A34A;
-    font-weight: 900;
-    font-size: 32px;
-    letter-spacing: 1px;
+
+    color: var(--color-primary-600);
+
+    font-weight: var(--font-weight-bold);
+
+    font-size: var(--font-size-h2);
+
     text-align: center;
+
+    margin-bottom: 20px;
+
 }
 
 /* ============================= */
@@ -20,127 +38,111 @@ body {
 /* ============================= */
 
 .texto-nosotros {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
+
+    color: var(--color-text-primary);
+
+    line-height: 1.7;
+
 }
 
 .imagen-nosotros {
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    border-radius: var(--border-radius-lg);
+
+    box-shadow: var(--shadow-md);
+
 }
 
 /* ============================= */
-/* TARJETAS INFO */
+/* TARJETAS (REUTILIZABLES) */
 /* ============================= */
 
-.tarjeta-info {
-    background: linear-gradient(to bottom, #ffffff, #DCFCE7);
-    border-radius: 12px;
-    padding: 25px;
-    transition: 0.3s;
-}
-
-.tarjeta-info:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
-}
-
-.texto-expandible {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.4s;
-}
-
-.tarjeta-info:hover .texto-expandible {
-    opacity: 1;
-    max-height: 200px;
-    margin-top: 15px;
-}
-
-/* ============================= */
-/* IMPACTO */
-/* ============================= */
-
-.seccion-impacto {
-    margin-top: 60px;
-}
-
+.tarjeta-info,
+.tarjeta-equipo,
 .caja-impacto {
-    background: linear-gradient(to bottom, #ffffff, #DCFCE7);
 
-    border-radius: 15px;
+    background:
+        linear-gradient(
+            to bottom,
+            var(--color-white),
+            var(--color-primary-100)
+        );
 
-    border: 1px solid #e5e7eb;
+    border-radius: var(--border-radius-lg);
 
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
 
-    min-height: 160px;
+    box-shadow: var(--shadow-md);
 
-    display: flex;
-    
-    flex-direction: column;
+    padding: 20px;
 
-    justify-content: center;
+    transition: var(--transition-normal);
 
-    text-align: center;
-
-    transition: 0.3s;
 }
 
+.tarjeta-info:hover,
+.tarjeta-equipo:hover,
 .caja-impacto:hover {
-    transform: translateY(-10px);
+
+    transform: translateY(-8px);
+
 }
 
+/* ============================= */
+/* TEXTO TARJETAS */
+/* ============================= */
+
+.nombre-equipo,
 .caja-impacto h4 {
-    color: #16A34A;
-    font-weight: 900;
-    font-size: 28px;
-}
 
-/* ============================= */
-/* EQUIPO */
-/* ============================= */
+    color: var(--color-primary-600);
 
-.texto-equipo {
-    font-size: 18px;
-    color: #333;
-    max-width: 750px;
-    margin: auto;
-}
+    font-weight: var(--font-weight-bold);
 
-.tarjeta-equipo {
-    background: linear-gradient(135deg, #ffffff, #d1fae5);
-
-    border-radius: 15px;
-    border: 1px solid #e5e7eb;
-
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
-
-    min-height: 160px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    transition: 0.3s;
-}
-
-.tarjeta-equipo:hover {
-    transform: translateY(-10px);
-}
-
-.nombre-equipo {
-    color: #16A34A;
-    font-weight: 900;
-    font-size: 18px;
-    margin-bottom: 8px;
 }
 
 .rol-equipo {
+
+    color: var(--color-text-secondary);
+
     font-size: 14px;
-    color: #555;
+
+}
+
+.texto-equipo {
+
+    color: var(--color-text-primary);
+
+    max-width: 750px;
+
+    margin: auto;
+
+}
+
+/* ============================= */
+/* TEXTO EXPANDIBLE */
+/* ============================= */
+
+.texto-expandible {
+
+    opacity: 0;
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition: var(--transition-normal);
+
+}
+
+.tarjeta-info:hover .texto-expandible {
+
+    opacity: 1;
+
+    max-height: 220px;
+
+    margin-top: 15px;
+
 }
 
 /* ============================= */
@@ -148,9 +150,28 @@ body {
 /* ============================= */
 
 @media (max-width: 768px) {
-    .texto-expandible {
-        opacity: 1;
-        max-height: 500px;
-        margin-top: 15px;
+
+    .titulo-principal {
+
+        font-size: 24px;
+
     }
+
+    .texto-nosotros,
+    .texto-equipo {
+
+        text-align: center;
+
+        font-size: 14px;
+
+    }
+
+    .texto-expandible {
+
+        opacity: 1;
+
+        max-height: 500px;
+
+    }
+
 }
