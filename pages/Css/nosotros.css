@@ -1,247 +1,153 @@
-/* ============================= */
-/* FONDO GENERAL */
-/* ============================= */
-
 body {
-
-font-family: Arial, Helvetica, sans-serif;
-
-background: linear-gradient(
-to bottom,
-#ffffff,
-#f0fdf4
-);
-
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #f0fdf4);
 }
 
-
 /* ============================= */
-/* IMAGEN */
+/* TITULOS */
 /* ============================= */
 
-.img-nosotros {
-
-border-radius: 12px;
-
-box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-
+.titulo-principal {
+    color: #16A34A;
+    font-weight: 900;
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
-
 /* ============================= */
-/* TITULO RESALTADO */
+/* NOSOTROS */
 /* ============================= */
 
-.titulo-resaltado {
-
-color: #16A34A;
-
-font-weight: 900;
-
-font-size: 32px;
-
-letter-spacing: 1px;
-
+.texto-nosotros {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
 }
 
+.imagen-nosotros {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================= */
+/* TARJETAS INFO */
+/* ============================= */
+
+.tarjeta-info {
+    background: linear-gradient(to bottom, #ffffff, #DCFCE7);
+    border-radius: 12px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.tarjeta-info:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.texto-expandible {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.tarjeta-info:hover .texto-expandible {
+    opacity: 1;
+    max-height: 200px;
+    margin-top: 15px;
+}
 
 /* ============================= */
 /* IMPACTO */
 /* ============================= */
 
 .seccion-impacto {
-
-margin-top: 60px;
-
+    margin-top: 60px;
 }
 
-.impacto-box {
+.caja-impacto {
+    background: linear-gradient(135deg, #ffffff, #d1fae5);
 
-background: linear-gradient(
-to bottom,
-#ffffff,
-#DCFCE7
-);
+    border-radius: 15px;
+    border: 1px solid #e5e7eb;
 
-padding: 20px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
 
-border-radius: 12px;
+    min-height: 160px;
 
-text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-transition: 0.3s;
+    text-align: center;
 
+    transition: 0.3s;
 }
 
-.impacto-box:hover {
-
-transform: scale(1.05);
-
+.caja-impacto:hover {
+    transform: translateY(-10px);
 }
 
-.impacto-box h4 {
-
-color: #16A34A;
-
-font-weight: bold;
-
-font-size: 28px;
-
+.caja-impacto h4 {
+    color: #16A34A;
+    font-weight: 900;
+    font-size: 28px;
 }
-
 
 /* ============================= */
-/* MISIÓN Y VISIÓN */
+/* EQUIPO */
 /* ============================= */
 
-.card-info {
-
-background: linear-gradient(
-to bottom,
-#ffffff,
-#DCFCE7
-);
-
-border-radius: 12px;
-
-transition: 0.3s;
-
-padding: 25px;
-
-}
-
-.card-info:hover {
-
-transform: translateY(-10px);
-
-box-shadow: 0px 8px 16px rgba(0,0,0,0.12);
-
-}
-
-
-/* TEXTO OCULTO */
-
-.texto-oculto {
-
-opacity: 0;
-
-max-height: 0;
-
-overflow: hidden;
-
-transition: 0.4s;
-
-font-weight: 600;
-
-}
-
-
-/* MOSTRAR TEXTO */
-
-.card-info:hover .texto-oculto {
-
-opacity: 1;
-
-max-height: 200px;
-
-margin-top: 15px;
-
-}
-
-
-/* ============================= */
-/* MÁS INFORMACIÓN */
-/* ============================= */
-
-.info-extra {
-
-background: linear-gradient(
-to bottom,
-#ffffff,
-#DCFCE7
-);
-
-padding: 30px;
-
-border-radius: 12px;
-
-margin-bottom: 40px;
-
-}
 .texto-equipo {
-
-font-size: 18px;
-
-color: #333;
-
-max-width: 750px;
-
-margin: auto;
-
+    font-size: 18px;
+    color: #333;
+    max-width: 750px;
+    margin: auto;
 }
 
-/* ============================= */
-/* TARJETAS EQUIPO */
-/* ============================= */
+.tarjeta-equipo {
+    background: linear-gradient(135deg, #ffffff, #d1fae5);
 
-.card-equipo {
+    border-radius: 15px;
+    border: 1px solid #e5e7eb;
 
-background: linear-gradient(
-135deg,
-#ffffff,
-#d1fae5
-);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
 
-border-radius: 15px;
+    min-height: 160px;
 
-transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-box-shadow: 0 5px 12px rgba(0,0,0,0.1);
-
-min-height: 160px;
-
-/* centra contenido vertical */
-
-display: flex;
-
-flex-direction: column;
-
-justify-content: center;
-
+    transition: 0.3s;
 }
 
-/* Hover bonito */
-
-.card-equipo:hover {
-
-transform: translateY(-10px);
-
+.tarjeta-equipo:hover {
+    transform: translateY(-10px);
 }
-
-/* ============================= */
-/* NOMBRE */
-/* ============================= */
 
 .nombre-equipo {
+    color: #16A34A;
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
 
-color: #16A34A;
-
-font-weight: 900;
-
-font-size: 18px;
-
-margin-bottom: 8px;
-
+.rol-equipo {
+    font-size: 14px;
+    color: #555;
 }
 
 /* ============================= */
-/* ROL */
+/* RESPONSIVE */
 /* ============================= */
 
-.rol-equipo {
-
-font-size: 14px;
-
-color: #555;
-
+@media (max-width: 768px) {
+    .texto-expandible {
+        opacity: 1;
+        max-height: 500px;
+        margin-top: 15px;
+    }
 }
