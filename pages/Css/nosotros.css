@@ -6,14 +6,11 @@ body {
 
     font-family: var(--font-family-base);
 
-    background:
-        linear-gradient(
-            to bottom,
-            var(--color-white),
-            var(--color-primary-100)
-        );
+    background: linear-gradient(to bottom, var(--color-white),var(--color-primary-100) );
 
 }
+
+
 
 /* ============================= */
 /* TITULOS */
